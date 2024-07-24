@@ -278,7 +278,7 @@ select * from lloguers_arxivats;
 drop event if exists event_arxivar_lloguer;
 delimiter //
 create event event_arxivar_lloguer
-on schedule every 10 second
+on schedule every 1 year
 do 
 begin
 	declare done boolean default false;
